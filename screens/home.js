@@ -1,7 +1,18 @@
 import React from "react";
-import { Button, StyleSheet, Text, View, Pressable } from "react-native";
+import { StyleSheet, Text, View, Pressable } from "react-native";
+import call from 'react-native-phone-call';
 
 const Home = ({ navigation }) => {
+  const phoneNumber = '6397984831';
+
+  const triggerCall = () => {
+    const args = {
+      number: phoneNumber,
+      prompt: true,
+    };
+    call(args).catch(console.error);
+  };
+
   return (
     <View style={styles.container}>
       <View style={{ flex: 1 / 2 }}>
@@ -13,7 +24,7 @@ const Home = ({ navigation }) => {
         <Pressable style={{ ...styles.opacity, width: '50%', borderRightWidth: 1.5 }} onLongPress={() => navigation.navigate("Daily Activity")}>
           <Text style={styles.text}>Daily{'\n'}Activities</Text>
         </Pressable>
-        <Pressable style={{ ...styles.opacity, width: '50%', borderLeftWidth: 1.5 }} onLongPress={() => console.log("SOS Called")}>
+        <Pressable style={{ ...styles.opacity, width: '50%', borderLeftWidth: 1.5 }} onLongPress={triggerCall}>
           <Text style={styles.text}>SOS</Text>
         </Pressable>
       </View>
