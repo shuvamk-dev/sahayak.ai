@@ -11,7 +11,7 @@ const CaretakerMessage = () => {
       </View>
       <View style={{ flex: 1 / 4, flexDirection: "row" }}>
         <Pressable style={{ ...styles.opacity, width: '100%' }} onLongPress={() => console.log("Bolaaaa")}>
-          <Text style={styles.text}>Speak</Text>
+          <Text style={styles.text}>Send</Text>
         </Pressable>
       </View>
     </View>
