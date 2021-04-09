@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, View, TouchableOpacity, Image, Pressable } from "react-native";
+import { StyleSheet, Text, View, Image, Pressable } from "react-native";
 import Mic from '../assets/Mic.png'
 
 const Communication = () => {
