@@ -7,6 +7,7 @@ import CaretakerMessage from "../screens/caretakerMessage";
 import Activity from "../screens/Activity";
 
 const Stack = createStackNavigator();
+//The entire app navigation
 
 const AppNavigator = () => (
   <Stack.Navigator>
