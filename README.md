@@ -1,15 +1,14 @@
-# Team shuvamk_6b12
+## Team shuvamk_6b12
 
-# PROJECT Sahayak.ai
+# Project Sahayak.ai
 
 ``` Problem Statement - Communication App for the Deaf-Blind ```
 
 <p align="center">
-  <img src="./screenshots/iPhone-X-1.png" alt="screenshot-1" width="150">
-  <img src="./screenshots/iPhone-X-2.png" alt="screenshot-2" width="150">
-  <img src="./screenshots/iPhone-X-3.png" alt="screenshot-3" width="150">
-  <img src="./screenshots/iPhone-X-4.png" alt="screenshot-4" width="150">
-  <img src="./screenshots/iPhone-X-5.png" alt="screenshot-5" width="150">
+  <img src="./Screenshots/iPhoneX.png" alt="screenshot-4" width="150">
+  <img src="./Screenshots/iPhoneX1.png" alt="screenshot-1" width="150">
+  <img src="./Screenshots/iPhoneX2.png" alt="screenshot-2" width="150">
+  <img src="./Screenshots/iPhoneX3.png" alt="screenshot-3" width="150">
 </p>
 
 This application is developed to help deaf-blind people interact with others with ease.
