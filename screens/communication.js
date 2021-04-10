@@ -13,6 +13,9 @@ import { convertFromMorse, convertToMorse } from "../components/convertToFromMor
 import Vibrator from "../components/vibrator";
 
 const Communication = () => {
+
+  const [isTalking, setTalking] = useState(false);
+
   const [message, setMessage] = useState('');
 
   const [audioMessage, setAudioMessage] = useState(
@@ -82,9 +85,9 @@ const Communication = () => {
         </Pressable>
         <Pressable
           style={{ ...styles.opacity, width: "50%", borderLeftWidth: 1.5 }}
-          onLongPress={() => console.log("Suno samne wale ko")}
+          onLongPress={() => setTalking(!isTalking)}
         >
-          <Image source={Mic} style={{ height: "20%", width: "20%" }} />
+          <Image source={Mic} tintColor={isTalking ? "#169DE9" : "#ffffff"} style={{ height: "20%", width: "20%" }} />
         </Pressable>
       </View>
     </View>
