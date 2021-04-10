@@ -1,6 +1,6 @@
-# Team shuvamk_6b12
+## Team shuvamk_6b12
 
-# PROJECT Sahayak.ai
+# Project Sahayak.ai
 
 ``` Problem Statement - Communication App for the Deaf-Blind ```
 
