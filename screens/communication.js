@@ -9,7 +9,10 @@ import {
 } from "react-native";
 import * as Speech from "expo-speech";
 import Mic from "../assets/Mic.png";
-import { convertFromMorse, convertToMorse } from "../components/convertToFromMorse";
+import {
+  convertFromMorse,
+  convertToMorse,
+} from "../components/convertToFromMorse";
 import Vibrator from "../components/vibrator";
 
 const Communication = () => {
@@ -37,18 +40,44 @@ const Communication = () => {
   };
 
   const backSpace = () => {
-    const temp = message.replace(message[message.length() - 1], '');
+    const temp = message.replace(message[message.length() - 1], "");
     setMessage(temp);
   };
 
+  const getSentiment = async () => {
+    fetch("https://twinword-sentiment-analysis.p.rapidapi.com/analyze/", {
+      method: "POST",
+      headers: {
+        "content-type": "text/html",
+        "x-rapidapi-key": "e22b77cae9msh1e0d36fa11e7c60p109f9fjsna6f877b327fc",
+        "x-rapidapi-host": "twinword-sentiment-analysis.p.rapidapi.com",
+      },
+      body: {
+        text: "I enjoyed this hackathon",
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+  };
   const speakMessage = () => {
     const text = convertFromMorse(message);
-    Speech.speak(text, { rate: 0.9, pitch: 0.8 });
+    getSentiment(message);
+    console.log(text);
+    Speech.speak(text, { rate: 0.75, pitch: 0.8 });
     const a = "";
     setMessage(a);
-    const code = convertToMorse("I sexy");
+  };
+
+  const getMessage = () => {
+    setTalking(!isTalking)
+    const code = convertToMorse("I am you");
     Vibrator(code);
-  }
+  };
 
   return (
     <View style={styles.container}>
@@ -60,9 +89,21 @@ const Communication = () => {
         >
           <Text style={styles.text}>Type here...</Text>
         </Pressable>
-        <View style={{ ...styles.opacity, borderBottomWidth: 3, borderLeftWidth: 0.2, width: "30%" }}>
+        <View
+          style={{
+            ...styles.opacity,
+            borderBottomWidth: 3,
+            borderLeftWidth: 0.2,
+            width: "30%",
+          }}
+        >
           <Pressable
-            style={{ ...styles.opacity, height: "50%", borderBottomWidth: 0.2, width: "100%" }}
+            style={{
+              ...styles.opacity,
+              height: "50%",
+              borderBottomWidth: 0.2,
+              width: "100%",
+            }}
             onPress={() => space()}
           >
             <Text style={{ fontSize: 8, color: "#fff" }}>Space</Text>
@@ -74,7 +115,6 @@ const Communication = () => {
             <Text style={{ fontSize: 8, color: "#fff" }}>Backspace</Text>
           </Pressable>
         </View>
-
       </View>
       <View style={{ flex: 1 / 4, flexDirection: "row" }}>
         <Pressable
@@ -85,7 +125,7 @@ const Communication = () => {
         </Pressable>
         <Pressable
           style={{ ...styles.opacity, width: "50%", borderLeftWidth: 1.5 }}
-          onLongPress={() => setTalking(!isTalking)}
+          onLongPress={() => getMessage()}
         >
           <Image source={Mic} tintColor={isTalking ? "#169DE9" : "#ffffff"} style={{ height: "20%", width: "20%" }} />
         </Pressable>
