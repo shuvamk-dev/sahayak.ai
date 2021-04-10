@@ -35,15 +35,15 @@ To run the python environment:
 
 ## Important Links
 * Presentation - [PPT Link](https://he-s3.s3.ap-southeast-1.amazonaws.com/media/sprint/rakathon-2021/team/976641/282c1a5sahayak__1_.pdf)
-* Video Link - [Youtube Video](https://drive.google.com/file/d/1fcZFtdTMGGvrz5oeXlEa52rfVN9smqLl/view?usp=sharing)
+* Video Link - [Video Link](https://drive.google.com/file/d/1fcZFtdTMGGvrz5oeXlEa52rfVN9smqLl/view?usp=sharing)
 
 
 ## Authors
 
-* **Shuvam Kumar** - [satya9500](https://github.com/shuvamk)
-* **Shubham Raghav** - [AkshaySharma008](https://github.com/RaghavShubham)
-* **Vijender Chaudhary** - [flarsu](https://github.com/vijuc)
-* **Amtul Maswara** - [flarsu](https://github.com/amtulkhan)
+* **Shuvam Kumar** - [shuvamk](https://github.com/shuvamk)
+* **Shubham Raghav** - [RaghavShubham](https://github.com/RaghavShubham)
+* **Vijender Chaudhary** - [vijuc](https://github.com/vijuc)
+* **Amtul Maswara** - [amtulkhan](https://github.com/amtulkhan)
 
  ## Acknowledgments
 
