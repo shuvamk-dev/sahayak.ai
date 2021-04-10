@@ -1,14 +1,23 @@
 # Team shuvamk_6b12
-Official Repository for Rakathon Submission of Team shuvamk_6b12
 
 # PROJECT Sahayak.ai
 
 ``` Problem Statement - Communication App for the Deaf-Blind ```
 
+<p align="center">
+  <img src="./screenshots/iPhone-X-1.png" alt="screenshot-1" width="150">
+  <img src="./screenshots/iPhone-X-2.png" alt="screenshot-2" width="150">
+  <img src="./screenshots/iPhone-X-3.png" alt="screenshot-3" width="150">
+  <img src="./screenshots/iPhone-X-4.png" alt="screenshot-4" width="150">
+  <img src="./screenshots/iPhone-X-5.png" alt="screenshot-5" width="150">
+</p>
+
 This application is developed to help deaf-blind people interact with others with ease.
 The app is designed in such a way that it can be used just by using taps, swipes and other gestures, so that a deafblind person can easily use it.
 Allows the deafblind person to communicate using AI and touch patterns. The other person won't need the app to communicate with the deafblind person.
 Provides the deafblind user the ability to perform some basic daily activities by the combination of some mere touches and taps, such as map navigation, get news updates, get the time, or chat with someone.
+
+
 
 ### Prerequisites
 
@@ -37,14 +46,3 @@ To run the python environment:
 * Presentation - [PPT Link](https://he-s3.s3.ap-southeast-1.amazonaws.com/media/sprint/rakathon-2021/team/976641/282c1a5sahayak__1_.pdf)
 * Video Link - [Video Link](https://drive.google.com/file/d/1fcZFtdTMGGvrz5oeXlEa52rfVN9smqLl/view?usp=sharing)
 
-
-## Authors
-
-* **Shuvam Kumar** - [shuvamk](https://github.com/shuvamk)
-* **Shubham Raghav** - [RaghavShubham](https://github.com/RaghavShubham)
-* **Vijender Chaudhary** - [vijuc](https://github.com/vijuc)
-* **Amtul Maswara** - [amtulkhan](https://github.com/amtulkhan)
-
- ## Acknowledgments
-
-* Made with &#9829; during Rakathon 2021 in 24 hrs.
