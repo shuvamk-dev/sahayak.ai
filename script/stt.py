@@ -4,7 +4,7 @@ from rev_ai.models import CustomVocabulary
 from flask import Flask,request,jsonify
 app = Flask(__name__)
 
-access_token = "02hYpEng1X0cR2jjhsQ7GoEFyNkobL7LuXgX6r2E9i3h7S4vVASWH8wsvwrHdEyZPSEFS1_T0MsinhF_b7QiSqiZV4pHI"
+access_token = "YOUR-ACCESS-TOKEN"
 client = apiclient.RevAiAPIClient(access_token)
 mit_professors = CustomVocabulary(
     ["Robert Berwick", "Noam Chomsky", "Evelina Fedorenko"]
